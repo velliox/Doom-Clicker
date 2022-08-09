@@ -1,0 +1,156 @@
+
+.main-panel{
+    width: 900px;
+    height: 800px;
+    margin:auto;
+    text-align: left;
+    position: relative;
+}
+
+
+.player-panel{
+    border:3px dotted #fff;
+    border-radius: 20px;
+    float: right;
+    width: 350px;
+    height: 500px;
+    margin-right: 20px;
+    background:rgba(68, 62, 62, 0.623);
+    text-align: left;
+    position: relative;
+}
+
+.personal-panel{
+    border:3px dotted #fff;
+    border-radius: 20px;
+    float: left;
+    width: 350px;
+    height: 540px;
+    margin-left: 20px;
+    background:rgba(68, 62, 62, 0.623);
+    text-align: left;
+    position: relative;
+}
+
+.leader-title{
+    font-family: 'Assassin Nation', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+.horror-title{
+    font-family: 'Assassin Nation', sans-serif;
+    color:white;
+    font-size: 72px;
+    margin-top: 20px;
+}
+
+.scary-title{
+    font-family: 'Assassin Nation', sans-serif;
+    color:white;
+    font-size: 48px;
+    margin-top: 2px;
+}
+
+body{
+    background:url(/assets/bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+html{
+    background: rgb(211 60 11);
+}
+
+@font-face {
+    font-family: 'HorrorTitle';
+    src: url('/assets/horroroid.ttf')  format('truetype')
+}
+
+.mob-img{
+    width: 200px;
+    height: auto;
+}
+
+.scor{
+    position:absolute;
+    font-family: 'Assassin Nation', sans-serif;
+    top:20px;
+    right:20px;
+    color:white;
+    font-size: 26px;
+}
+table{
+    font-family: 'Assassin Nation', sans-serif;
+    font-size: 32px;
+}
+.mobs{
+    position:absolute;
+    font-family: 'Assassin Nation', sans-serif;
+    top:50px;
+    right:20px;
+    color:white;
+    font-size: 26px; 
+}
+.hb{
+    position:absolute;
+    font-family: 'Assassin Nation', sans-serif;
+    top:20px;
+    left:20px;
+    color:white;
+    font-size: 26px;
+}
+.main-panel img {
+    position: absolute;
+}
+
+svg{
+    margin:10px;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+.full-hp{
+    opacity: 1;
+}
+.tm{
+    display: none;
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (max-width : 1400px) {
+    body *{
+        display:none;
+    }
+    .swal2-container.swal2-center.swal2-backdrop-show {
+        display: none;
+    }
+    .tm{
+        display: block!important;
+        text-align: center;
+        color:rgb(250, 250, 250)!Important;
+    }
+}
+
+
+.logo-panel{
+    margin:auto;
+    width: 84px;
+    height: 120px;
+    overflow: hidden;
+    position:relative;
+}
+
+.Fire_spritesheet{
+    animation: moveSpritesheet 1s steps(4) infinite;
+}
+
+@keyframes moveSpritesheet{
+    from {
+        transform: translate3d(0px,0,0);
+    }
+    to {
+        transform:translate3d(-100%,0,0);
+    }
+}
